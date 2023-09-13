@@ -49,7 +49,7 @@ const sbH = async () => {
 
   try {
     loading.value = true
-    return await check(search.value)[ vendor.value ]({ cors: "https://cors-anywhere.herokuapp.com/" })
+    return await check(search.value)[ vendor.value ]({ cors: "https://cors.skiddph.com/api?endpoint=" })
       .then(e => {
         if (e.success) {
           success.value = true
